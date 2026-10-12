@@ -1,0 +1,43 @@
+:root {
+  /* Dark roast palette — no white page backgrounds */
+  --night: #0c0a09;
+  --charcoal: #14110f;
+  --espresso: #1f1814;
+  --mocha: #2a211c;
+  --gold: #d4a45a;
+  --gold-bright: #e8bc6e;
+  --cream: #e8dfd2;
+  --cream-muted: rgba(232, 223, 210, 0.68);
+  --line: rgba(232, 223, 210, 0.14);
+
+  /* Legacy aliases remapped for dark UI */
+  --ivory: var(--cream);
+  --soft-white: var(--mocha);
+  --bg: var(--charcoal);
+  --bg-soft: var(--espresso);
+  --ink: var(--cream);
+  --ink-soft: var(--cream-muted);
+  --accent: var(--gold);
+  --deep: var(--gold);
+
+  --font-display: "Anton", "Archivo Black", Impact, sans-serif;
+  --font-display-alt: "Archivo Black", "Anton", Impact, sans-serif;
+  --font-body: "Manrope", system-ui, sans-serif;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: 7rem;
+
+  --header-h: 5.5rem;
+  --radius: 0;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --max: 1200px;
+  --section-pad-y: clamp(4.5rem, 10vw, 8rem);
+  --section-pad-x: clamp(1.25rem, 4vw, 3.5rem);
+}

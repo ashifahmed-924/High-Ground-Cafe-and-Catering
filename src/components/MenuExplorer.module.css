@@ -1,0 +1,125 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.headActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  min-height: 2.6rem;
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--line);
+  color: var(--cream);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: transparent;
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.tabActive,
+.tab:hover {
+  background: var(--gold);
+  color: var(--night);
+  border-color: var(--gold);
+}
+
+.blurb {
+  color: var(--ink-soft);
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.85rem;
+}
+
+.card {
+  text-align: left;
+  display: grid;
+  grid-template-rows: 180px auto;
+  background: var(--mocha);
+  border: 1px solid var(--line);
+  color: var(--cream);
+  transition: transform 0.35s var(--ease-out), border-color 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(212, 164, 90, 0.7);
+}
+
+.thumb {
+  overflow: hidden;
+  background: var(--night);
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-out);
+}
+
+.card:hover .thumb img {
+  transform: scale(1.06);
+}
+
+.cardCopy {
+  padding: 1rem 1rem 1.15rem;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.cardCopy h3 {
+  font-size: 1.55rem;
+}
+
+.price {
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--gold);
+}
+
+.cardCopy p {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

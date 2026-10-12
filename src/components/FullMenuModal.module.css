@@ -1,0 +1,102 @@
+.panel {
+  width: min(100%, 860px);
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.head h2 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.uberLink {
+  display: inline-flex;
+  margin-top: 0.85rem;
+  min-height: 2.5rem;
+  align-items: center;
+  padding: 0.5rem 0.95rem;
+  background: var(--gold);
+  color: var(--night);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.uberLink:hover {
+  background: var(--gold-bright);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.price {
+  color: var(--gold);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.ask {
+  color: var(--cream-muted);
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.head button {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  color: var(--cream);
+}
+
+.groups {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.group h3 {
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: 0.65rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.35rem;
+}
+
+.group ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.group li {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.group strong {
+  font-weight: 800;
+}
+
+.group span {
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
+.note {
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}

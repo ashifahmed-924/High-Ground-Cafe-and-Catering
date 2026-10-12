@@ -1,0 +1,22 @@
+@media (max-width: 900px) {
+  :root {
+    --header-h: 4.5rem;
+  }
+
+  .section-title {
+    max-width: 14ch;
+  }
+}
+
+@media (max-width: 640px) {
+  .back-to-top {
+    right: 0.85rem;
+    bottom: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

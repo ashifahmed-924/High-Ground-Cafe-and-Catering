@@ -1,0 +1,83 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 3.1rem;
+  padding: 0.85rem 1.6rem;
+  overflow: hidden;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: color 0.35s var(--ease-out), background 0.35s var(--ease-out),
+    border-color 0.35s var(--ease-out), transform 0.35s var(--ease-out);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.label {
+  position: relative;
+  z-index: 1;
+}
+
+.shine {
+  position: absolute;
+  inset: 0;
+  transform: translateX(-110%);
+  background: linear-gradient(
+    110deg,
+    transparent 30%,
+    rgba(250, 247, 241, 0.25) 48%,
+    transparent 62%
+  );
+  transition: transform 0.55s var(--ease-out);
+}
+
+.btn:hover .shine {
+  transform: translateX(110%);
+}
+
+.primary {
+  background: var(--mocha);
+  color: var(--cream);
+  border: 1px solid var(--line);
+}
+
+.primary:hover {
+  background: var(--gold);
+  color: var(--night);
+  border-color: var(--gold);
+}
+
+.gold {
+  background: var(--gold);
+  color: var(--night);
+  border: 1px solid var(--gold);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid rgba(232, 223, 210, 0.45);
+}
+
+.ghost:hover {
+  background: rgba(232, 223, 210, 0.08);
+}
+
+.ink {
+  background: transparent;
+  color: var(--cream);
+  border: 1px solid var(--line);
+}
+
+.ink:hover {
+  background: var(--gold);
+  color: var(--night);
+  border-color: var(--gold);
+}

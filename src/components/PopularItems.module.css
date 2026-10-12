@@ -1,0 +1,121 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.titleBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  min-width: 0;
+}
+
+.titleBlock :global(.section-label) {
+  margin-bottom: 0.65rem;
+}
+
+.titleBlock :global(.section-title) {
+  max-width: none;
+  white-space: nowrap;
+  line-height: 1.15;
+}
+
+.nav {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.nav button {
+  width: 2.7rem;
+  height: 2.7rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  background: var(--mocha);
+  color: var(--cream);
+}
+
+.nav button:hover {
+  background: var(--gold);
+  color: var(--night);
+  border-color: var(--gold);
+}
+
+.scroller {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(320px, 400px);
+  gap: 0.85rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 var(--section-pad-x) 0.5rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  scroll-snap-align: start;
+  background: var(--mocha);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  color: var(--cream);
+}
+
+.card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.card div {
+  padding: 1rem;
+}
+
+.card p {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+
+.card h3 {
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  white-space: nowrap;
+}
+
+.price {
+  display: inline-block;
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--gold);
+}
+
+@media (max-width: 720px) {
+  .head {
+    flex-wrap: wrap;
+    align-items: flex-end;
+  }
+
+  .titleBlock :global(.section-title) {
+    font-size: clamp(2.2rem, 9vw, 3.4rem);
+    white-space: normal;
+  }
+
+  .nav {
+    margin-left: auto;
+  }
+}
